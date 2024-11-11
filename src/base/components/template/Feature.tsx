@@ -1,21 +1,21 @@
 'use client'
 import { motion } from 'framer-motion'
 import Image from 'next/legacy/image'
-import { useTranslation } from 'next-i18next'
+import { useTranslations } from 'next-intl'
 import React, { useMemo } from 'react'
 
 import ScrollAnimationWrapper from '@/base/components/layout/ScrollAnimationWrapper'
 import { getScrollAnimation } from '@/base/utils/getScrollAnimation'
 
 const Feature = () => {
-  const { t } = useTranslation('common')
+  const t = useTranslations('HomePage')
   const scrollAnimation = useMemo(() => getScrollAnimation(), [])
 
   const features = [
-    t('Powerfull online protection.'),
-    t('Internet without borders.'),
+    t('Powerful online protection'),
+    t('Internet without borders'),
     t('Supercharged VPN'),
-    t('No specific time limits.'),
+    t('No specific time limits'),
   ]
 
   return (
@@ -41,11 +41,7 @@ const Feature = () => {
             <h3 className='text-3xl font-medium leading-relaxed text-black lg:text-4xl'>
               {t('We Provide Many Features You Can Use')}
             </h3>
-            <p className='my-2 text-black'>
-              {t(
-                'You can explore the features that we provide with fun and have their own functions each feature.'
-              )}
-            </p>
+            <p className='my-2 text-black'>{t('Feature title')}</p>
             <ul className='ml-8 list-inside self-start text-black'>
               {features.map((feature, index) => (
                 <motion.li

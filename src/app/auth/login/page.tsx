@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { signIn } from 'next-auth/react'
-import { useTranslation } from 'next-i18next'
+import { useTranslations } from 'next-intl'
 // import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import React, { useState } from 'react'
 import { Loader2 } from 'lucide-react'
@@ -32,7 +32,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 
 const Login = ({ locale }: { locale: string }) => {
   const router = useRouter()
-  const { t } = useTranslation('login')
+  const t = useTranslations('LoginPage')
   const [isLoading, setLoading] = useState<boolean>(false)
   const formSchema = z.object({
     email: z.string().min(2, {

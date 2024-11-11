@@ -1,7 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { useTranslation } from 'next-i18next'
+import { useTranslations } from 'next-intl'
 import React, { useMemo } from 'react'
 
 import ScrollAnimationWrapper from '@/base/components/layout/ScrollAnimationWrapper'
@@ -27,7 +27,7 @@ const Hero = ({
     },
   ],
 }) => {
-  const { t } = useTranslation('common')
+  const t = useTranslations('HomePage')
   const scrollAnimation = useMemo(() => getScrollAnimation(), [])
 
   return (
@@ -39,14 +39,9 @@ const Hero = ({
         >
           <div className='row-start-2 flex flex-col items-start justify-center sm:row-start-1'>
             <h1 className='text-3xl font-medium leading-normal text-black lg:text-4xl xl:text-5xl'>
-              {t('Want anything to be easy with ')}
-              <strong>LaslesVPN</strong>.
+              {t('Want anything to be easy with')} <strong>LaslesVPN</strong>.
             </h1>
-            <p className='mb-6 mt-4 text-black'>
-              {t(
-                'Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from us.'
-              )}
-            </p>
+            <p className='mb-6 mt-4 text-black'>{t('Provide network')}</p>
             <Button>{t('Get Started')}</Button>
           </div>
           <div className='flex w-full'>

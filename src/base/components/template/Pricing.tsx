@@ -1,7 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { useTranslation } from 'next-i18next'
+import { useTranslations } from 'next-intl'
 import React, { useMemo } from 'react'
 
 import ScrollAnimationWrapper from '@/base/components/layout/ScrollAnimationWrapper'
@@ -11,7 +11,7 @@ import Preview from './Preview'
 import { Button } from '@/components/ui/button'
 
 const Pricing = () => {
-  const { t } = useTranslation('common')
+  const t = useTranslations('HomePage')
 
   const scrollAnimation = useMemo(() => getScrollAnimation(), [])
 
@@ -24,14 +24,14 @@ const Pricing = () => {
               variants={scrollAnimation}
               className='text-2xl font-medium leading-relaxed text-black sm:text-3xl lg:text-4xl'
             >
-              {t('Choose your plan', { ns: 'common' })}
+              {t('Choose your plan', { ns: 'HomePage' })}
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
               className='mx-auto my-2 w-10/12 text-center leading-normal sm:w-7/12 lg:w-6/12'
             >
               {t(
-                'Let choose the package that is best for you and explore it happily and cheerfully.'
+                'Let choose the package that is best for you and explore it happily and cheerfully'
               )}
             </motion.p>
           </ScrollAnimationWrapper>
@@ -239,7 +239,7 @@ const Pricing = () => {
                   <h5 className='text-xl font-medium leading-relaxed text-black sm:text-2xl lg:text-3xl'>
                     Subscribe Now for <br /> Get Special Features!
                   </h5>
-                  <p>{t('Let subscribe with us and find the fun.', { ns: 'common' })}</p>
+                  <p>{t('Let subscribe with us and find the fun', { ns: 'HomePage' })}</p>
                 </div>
                 <Button>Get Started</Button>
               </div>

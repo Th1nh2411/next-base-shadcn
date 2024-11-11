@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 // import { useRouter } from 'next/navigation';
+import { setCookie } from 'cookies-next/client'
 import { signOut } from 'next-auth/react'
 import React, { useState, useEffect } from 'react'
 import { Link as LinkScroll } from 'react-scroll'
@@ -24,8 +25,10 @@ const Header = () => {
       setScrollActive(window.scrollY > 20)
     })
   }, [])
-  const handleChangeLanguage = (value: string) => {
+  const handleChangeLanguage = async (value: string) => {
     console.log(value)
+
+    setCookie('locale', value)
   }
 
   const renderSettingDropdownMenu = () => (
@@ -42,7 +45,7 @@ const Header = () => {
             English
           </div>
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => handleChangeLanguage('vn')}>
+        <DropdownMenuItem onClick={() => handleChangeLanguage('vi')}>
           <div className='flex gap-3'>
             <span role='img' aria-label='Vietnamese'>
               🇻🇳

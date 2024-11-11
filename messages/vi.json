@@ -1,0 +1,27 @@
+{
+  "HomePage": {
+    "Choose your plan": "Chọn gói của bạn",
+    "Let subscribe with us and find the fun": "Hãy đăng ký với chúng tôi và khám phá niềm vui.",
+    "We Provide Many Features You Can Use": "Chúng tôi cung cấp nhiều tính năng bạn có thể sử dụng",
+    "Feature title": "Bạn có thể khám phá các tính năng chúng tôi cung cấp với sự thú vị và mỗi tính năng đều có chức năng riêng.",
+    "Powerful online protection": "Bảo vệ trực tuyến mạnh mẽ.",
+    "Internet without borders": "Internet không biên giới.",
+    "Supercharged VPN": "VPN siêu mạnh.",
+    "No specific time limits": "Không giới hạn thời gian cụ thể.",
+    "Let choose the package that is best for you and explore it happily and cheerfully": "Hãy chọn gói phù hợp nhất cho bạn và khám phá một cách vui vẻ và phấn khởi.",
+    "Want anything to be easy with": "Muốn mọi thứ trở nên dễ dàng với",
+    "Provide network": "Cung cấp một mạng lưới cho tất cả nhu cầu của bạn với sự dễ dàng và thú vị khi sử dụng LaslesVPN khám phá các tính năng thú vị từ chúng tôi.",
+    "Get Started": "Bắt đầu ngay"
+  },
+  "LoginPage": {
+    "Keep it special": "Giữ sự đặc biệt",
+    "Capture your personal memory in unique way, anywhere": "Lưu giữ kỷ niệm cá nhân của bạn theo cách độc đáo, ở bất cứ đâu.",
+    "Email": "Email",
+    "Password": "Mật khẩu",
+    "Forgot your password?": "Quên mật khẩu?",
+    "Sign in": "Đăng nhập",
+    "Please input your email": "Vui lòng nhập email của bạn",
+    "Email is invalid": "Email không hợp lệ",
+    "Please input your password!": "Vui lòng nhập mật khẩu của bạn!"
+  }
+}
