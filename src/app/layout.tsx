@@ -3,6 +3,7 @@ import localFont from 'next/font/local'
 import '@/base/styles/globals.css'
 import { NextIntlClientProvider } from 'next-intl'
 import { getLocale, getMessages } from 'next-intl/server'
+import { UserConfigStoreProvider } from '@/base/stores/user-config.provider'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -21,7 +22,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body>
-        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}><UserConfigStoreProvider>{children}</UserConfigStoreProvider></NextIntlClientProvider>
       </body>
     </html>
   )

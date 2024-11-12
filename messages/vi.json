@@ -14,14 +14,14 @@
     "Get Started": "Bắt đầu ngay"
   },
   "LoginPage": {
-    "Keep it special": "Giữ sự đặc biệt",
-    "Capture your personal memory in unique way, anywhere": "Lưu giữ kỷ niệm cá nhân của bạn theo cách độc đáo, ở bất cứ đâu.",
-    "Email": "Email",
-    "Password": "Mật khẩu",
-    "Forgot your password?": "Quên mật khẩu?",
-    "Sign in": "Đăng nhập",
-    "Please input your email": "Vui lòng nhập email của bạn",
-    "Email is invalid": "Email không hợp lệ",
-    "Please input your password!": "Vui lòng nhập mật khẩu của bạn!"
+    "Create an account": "Tạo tài khoản",
+    "Enter your email below to create your account": "Nhập email của bạn bên dưới để tạo tài khoản",
+    "By clicking continue, you agree to our": "Bằng cách nhấn tiếp tục, bạn đồng ý với",
+    "Terms of Service": "Điều khoản dịch vụ",
+    "and": "và",
+    "Privacy Policy": "Chính sách bảo mật",
+    "Register": "Đăng ký",
+    "Quote": "Kỹ năng mới quan trọng, ngôn ngữ thì không. Đôi khi chỉ cần HTML là đủ",
+    "Quote Author": "Rin Nguyen"
   }
 }

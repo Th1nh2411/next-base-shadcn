@@ -14,10 +14,14 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 import { Settings } from 'lucide-react'
+import { useTransition } from 'react'
+import { setUserLocale } from '@/base/services/locale'
+import { Locale } from '@/i18n/config'
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState<string>('')
   const [scrollActive, setScrollActive] = useState<boolean>(false)
+  const [isPending, startTransition] = useTransition();
   // const router = useRouter();
 
   useEffect(() => {
@@ -26,9 +30,10 @@ const Header = () => {
     })
   }, [])
   const handleChangeLanguage = async (value: string) => {
-    console.log(value)
-
-    setCookie('locale', value)
+    const locale = value as Locale;
+    startTransition(() => {
+      setUserLocale(locale);
+    });
   }
 
   const renderSettingDropdownMenu = () => (

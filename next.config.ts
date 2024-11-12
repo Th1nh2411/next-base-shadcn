@@ -6,7 +6,11 @@ const withNextIntl = createNextIntlPlugin()
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['source.unsplash.com', 'images.unsplash.com', 'preview.colorlib.com'],
+    domains: [
+      'source.unsplash.com',
+      'images.unsplash.com',
+      'preview.colorlib.com',
+    ],
   },
 }
 

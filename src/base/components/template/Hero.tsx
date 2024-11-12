@@ -39,7 +39,7 @@ const Hero = ({
         >
           <div className='row-start-2 flex flex-col items-start justify-center sm:row-start-1'>
             <h1 className='text-3xl font-medium leading-normal text-black lg:text-4xl xl:text-5xl'>
-              {t('Want anything to be easy with')} <strong>LaslesVPN</strong>.
+              {t('Want anything to be easy with')} <strong> LaslesVPN</strong>.
             </h1>
             <p className='mb-6 mt-4 text-black'>{t('Provide network')}</p>
             <Button>{t('Get Started')}</Button>

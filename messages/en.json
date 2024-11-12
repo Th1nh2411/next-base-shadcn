@@ -9,19 +9,19 @@
     "Supercharged VPN": "Supercharged VPN.",
     "No specific time limits": "No specific time limits.",
     "Let choose the package that is best for you and explore it happily and cheerfully": "Let choose the package that is best for you and explore it happily and cheerfully.",
-    "Want anything to be easy with": "Want anything to be easy with ",
+    "Want anything to be easy with": "Want anything to be easy with",
     "Provide network": "Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from us.",
     "Get Started": "Get Started"
   },
   "LoginPage": {
-    "Keep it special": "Keep it special",
-    "Capture your personal memory in unique way, anywhere": "Capture your personal memory in unique way, anywhere.",
-    "Email": "Email",
-    "Password": "Password",
-    "Forgot your password?": "Forgot your password?",
-    "Sign in": "Sign in",
-    "Please input your email": "Please input your email",
-    "Email is invalid": "Email is invalid",
-    "Please input your password!": "Please input your password!"
+    "Create an account": "Create an account",
+    "Enter your email below to create your account": "Enter your email below to create your account",
+    "By clicking continue, you agree to our": "By clicking continue, you agree to our",
+    "Terms of Service": "Terms of Service",
+    "and": "and",
+    "Privacy Policy": "Privacy Policy",
+    "Register": "Register",
+    "Quote": "Skill is important, language is not. Sometimes just HTML is enough",
+    "Quote Author": "Rin Nguyen"
   }
 }
