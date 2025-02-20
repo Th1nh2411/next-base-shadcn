@@ -53,7 +53,7 @@ const Preview = ({
         <CarouselContent>
           {listPreview.map((previewItem, index) => (
             <CarouselItem key={index}>
-              <div className='flex items-stretch px-3'>
+              <div className='flex items-stretch justify-center px-3'>
                 <div className='flex flex-col rounded-lg border-2 border-gray p-8 transition-all hover:border-orange-500'>
                   <div className='flex w-full flex-col items-stretch xl:flex-row xl:items-center'>
                     <div className='order-2 flex xl:order-1'>

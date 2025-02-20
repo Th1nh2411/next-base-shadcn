@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import { buttonVariants } from '@/components/ui/button'
-import { UserAuthForm } from './auth-form'
+import { UserAuthForm } from './UserAuthForm'
 import Image from 'next/image'
 import { Icons } from '@/base/components/icons'
 
